@@ -60,3 +60,12 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+# Eclipse PyDev
+.project
+.pydevproject
+.settings/
+
+# PyCharm
+.idea/
+

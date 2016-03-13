@@ -1,0 +1,6 @@
+
+<RCC>
+  <qresource prefix="typeconverterstep">
+    <file>images/utility.png</file>
+  </qresource>
+</RCC>
