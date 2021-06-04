@@ -1,10 +1,9 @@
-
 """
 MAP Client Plugin Step
 """
 import json
 
-from PySide import QtGui
+from PySide2 import QtGui
 
 from mapclient.mountpoints.workflowstep import WorkflowStepMountPoint
 from mapclientplugins.typeconverterstep.configuredialog import ConfigureDialog
@@ -18,12 +17,12 @@ class TypeConverterStep(WorkflowStepMountPoint):
 
     def __init__(self, location):
         super(TypeConverterStep, self).__init__('Type Converter', location)
-        self._configured = False # A step cannot be executed until it has been configured.
+        self._configured = False  # A step cannot be executed until it has been configured.
         self._category = 'Utility'
         # Add any other initialisation code here:
-        self._icon =  QtGui.QImage(':/typeconverterstep/images/utility.png')
+        self._icon = QtGui.QImage(':/typeconverterstep/images/utility.png')
         # Port data:
-        self._portDataIn = None # anothertype
+        self._portDataIn = None  # anothertype
         # Config:
         self._config = {'identifier': '',
                         'Input Port Type': 'http://physiomeproject.org/workflow/1.0/rdf-schema#sometype',
@@ -47,7 +46,7 @@ class TypeConverterStep(WorkflowStepMountPoint):
         The index is the index of the port in the port list.  If there is only one
         uses port for this step then the index can be ignored.
         """
-        self._portDataIn = dataIn # anothertype
+        self._portDataIn = dataIn  # anothertype
 
     def getPortData(self, index):
         """
@@ -55,7 +54,7 @@ class TypeConverterStep(WorkflowStepMountPoint):
         The index is the index of the port in the port list.  If there is only one
         provides port for this step then the index can be ignored.
         """
-        return self._portDataIn # atype
+        return self._portDataIn  # atype
 
     def configure(self):
         """
@@ -97,7 +96,6 @@ class TypeConverterStep(WorkflowStepMountPoint):
         """
         return json.dumps(self._config, default=lambda o: o.__dict__, sort_keys=True, indent=4)
 
-
     def deserialize(self, string):
         """
         Add code to deserialize this step from string.  This method should
@@ -119,4 +117,3 @@ class TypeConverterStep(WorkflowStepMountPoint):
         self.addPort(('http://physiomeproject.org/workflow/1.0/rdf-schema#port',
                       'http://physiomeproject.org/workflow/1.0/rdf-schema#uses',
                       self._config['Input Port Type']))
-
