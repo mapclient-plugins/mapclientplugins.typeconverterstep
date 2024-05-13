@@ -1,10 +1,10 @@
-Directory Chooser
-=================
+Type Converter
+==============
 
 Overview
 --------
-The **Type Converter** is MAP Client plugin for converting a providing type from it's specified type to another type.
 
+The **Type Converter** is MAP Client plugin for converting a providing type from its specified type to another type.
 
 Workflow Connections
 --------------------
@@ -13,7 +13,7 @@ As shown in :numref:`fig-mcp-type-converter-workflow-connections`, the **Type Co
 
 It produces one output, the type of which is user specified, which may be piped to other workflow steps:
 
-.. _fig-mcp-directory-chooser-workflow-connections:
+.. _fig-mcp-type-converter-workflow-connections:
 
 .. figure:: _images/workflow-connections.png
    :alt: Type Converter workflow connections.
@@ -22,8 +22,7 @@ It produces one output, the type of which is user specified, which may be piped 
 
    **Type Converter** workflow connections.
 
-
-Information on this plugins' specification is available :ref:`here <mcp-directory-chooser-specification>`.
+Information on this plugins' specification is available :ref:`here <mcp-type-converter-specification>`.
 
 Configuration
 -------------
@@ -37,6 +36,7 @@ The user is free to set the input and output types to any type they might wish, 
 
 .. figure:: _images/step-configuration-dialog.png
    :alt: Step configure dialog
+   :align: center
 
    **Type Converter** step configuration dialog.
 
@@ -45,3 +45,11 @@ Instructions
 
 This is a non-interactive step.
 See `Configuration`_.
+
+
+.. toctree::
+  :hidden:
+  :caption: Type Converter
+  :maxdepth: 1
+
+  specification.rst
