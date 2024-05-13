@@ -1,8 +1,8 @@
-'''
+"""
 MAP Client Plugin
-'''
+"""
 
-__version__ = '0.2.0'
+__version__ = '0.2.1'
 __author__ = 'Hugh Sorby'
 __stepname__ = 'Type Converter'
 __location__ = 'https://github.com/mapclient-plugins/typeconverterstep/archive/master.zip'
