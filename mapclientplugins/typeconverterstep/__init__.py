@@ -2,7 +2,7 @@
 MAP Client Plugin
 """
 
-__version__ = '0.2.3'
+__version__ = '0.2.4'
 __author__ = 'Hugh Sorby'
 __stepname__ = 'Type Converter'
 __location__ = 'https://github.com/mapclient-plugins/typeconverterstep'
