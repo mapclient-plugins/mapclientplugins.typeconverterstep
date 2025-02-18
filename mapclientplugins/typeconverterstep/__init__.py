@@ -5,7 +5,7 @@ MAP Client Plugin
 __version__ = '0.2.3'
 __author__ = 'Hugh Sorby'
 __stepname__ = 'Type Converter'
-__location__ = 'https://github.com/mapclient-plugins/typeconverterstep.git'
+__location__ = 'https://github.com/mapclient-plugins/typeconverterstep'
 
 # import class that derives itself from the step mountpoint.
 from mapclientplugins.typeconverterstep import step
